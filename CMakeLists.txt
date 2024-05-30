@@ -15,7 +15,7 @@ find_package(Boost REQUIRED COMPONENTS
 # Optional
 #find_package(OpenSSL REQUIRED COMPONENTS SSL Crypto)
 
-add_executable(client client.cpp)
+add_executable(client src/client.cpp)
 target_link_libraries(client
   Boost::headers
   Boost::system
@@ -25,7 +25,7 @@ target_link_libraries(client
   #OpenSSL::Crypto
 )
 
-add_executable(server server.cpp)
+add_executable(server src/server.cpp)
 target_link_libraries(server
   Boost::headers
   Boost::system
