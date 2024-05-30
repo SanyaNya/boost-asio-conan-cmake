@@ -1,0 +1,10 @@
+#https://conan.io/center/recipes/boost
+[requires]
+boost/1.85.0
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[layout]
+cmake_layout
